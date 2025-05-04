@@ -9,7 +9,7 @@ const IndexSection = () => {
           display: 'flex',
           alignItems: 'end',
           justifyContent: 'center',
-          minHeight: 'clamp(300px, 90dvh, 300px)',
+          minHeight: 'clamp(350px, 60dvh, 350px)',
         }}
       >
         <Box
@@ -79,7 +79,7 @@ const IndexSection = () => {
             size="4"
             weight="3"
           >
-            Hi I&apos;m Maxime, and this is my blog. In here, you&apos;ll find
+            Hi I&apos;m Vikas, and this is my blog. In here, you&apos;ll find
             all the articles I wished I had when I was learning about web
             development, shaders, real-time 3D on the web, and more.
             <br />
