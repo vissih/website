@@ -36,11 +36,20 @@
     ]
   },
   "include": [
-    "./**/**.*"
+    "./pages/**/*",
+    "./scripts/**/*",
+    "./components/**/*",
+    "./utils/**/*"
   ],
   "exclude": [
     "node_modules",
     "./**/*.spec.ts",
-    "./**/*.spec.tsx"
+    "./**/*.spec.tsx",
+    "./scripts/generate-embeddings.js",
+    "./scripts/generate-rss.js",
+    "./scripts/generate-sitemap.js",
+    "./scripts/process-mdx.js",
+    "./scripts/search.js",
+    "./pages/api/embeddings.ts"
   ]
 }

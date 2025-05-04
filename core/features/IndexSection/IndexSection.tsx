@@ -1,14 +1,7 @@
 import { Box, Flex, Grid, Text } from '@maximeheckel/design-system';
-import dynamic from 'next/dynamic';
-
-const Scene = dynamic(() => import('./Scene').then((mod) => mod.Scene), {
-  ssr: false,
-});
-
 const IndexSection = () => {
   return (
     <>
-      <Scene />
       <Grid.Item
         col={2}
         justifySelf="center"
@@ -16,7 +9,7 @@ const IndexSection = () => {
           display: 'flex',
           alignItems: 'end',
           justifyContent: 'center',
-          minHeight: 'clamp(400px, 90dvh, 900px)',
+          minHeight: 'clamp(300px, 90dvh, 300px)',
         }}
       >
         <Box

@@ -5,7 +5,6 @@ import Head from 'next/head';
 import 'styles/global.css';
 
 import { Fonts } from '@core/components/Fonts';
-import { DefaultSeo } from '@core/components/Seo';
 
 const Meta = () => {
   return (
@@ -17,7 +16,6 @@ const Meta = () => {
           content="f11boUvGIzjbYwQVuaCieN-J4vcA_BxJuO_S54WPf-U"
         />
       </Head>
-      <DefaultSeo />
     </>
   );
 };

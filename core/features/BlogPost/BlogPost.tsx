@@ -1,5 +1,5 @@
 import { css, Box, Flex, Grid, Text } from '@maximeheckel/design-system';
-import siteConfig from 'config/site';
+import siteConfig from 'config/site.js';
 import { format } from 'date-fns';
 import {
   AnimatePresence,
@@ -17,7 +17,6 @@ import { DynamicTOC } from '@core/components/DynamicTOC';
 import Footer from '@core/components/Footer/Footer';
 import { Main } from '@core/components/Main';
 import { ScrambledText } from '@core/components/ScrambledText';
-import Seo from '@core/components/Seo';
 
 import { Footnote } from './Footnote';
 
@@ -194,14 +193,6 @@ const BlogPost = ({ children, frontMatter, ogImage }: Props) => {
 
   return (
     <Main>
-      <Seo
-        title={title}
-        desc={subtitle}
-        image={ogImage}
-        path={path}
-        date={date}
-        updated={updated}
-      />
       <Header title={title} ids={ids} />
       <Grid
         as="article"
